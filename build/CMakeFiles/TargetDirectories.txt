@@ -1,0 +1,5 @@
+C:/Users/Angel/Desktop/ProyectoC/SDLRayTracing/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Angel/Desktop/ProyectoC/SDLRayTracing/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Angel/Desktop/ProyectoC/SDLRayTracing/build/src/CMakeFiles/RayTracerLib.dir
+C:/Users/Angel/Desktop/ProyectoC/SDLRayTracing/build/src/CMakeFiles/ALL_BUILD.dir
+C:/Users/Angel/Desktop/ProyectoC/SDLRayTracing/build/src/launcher/CMakeFiles/RayTracer.dir
