@@ -6,7 +6,37 @@
 		{
 			"label": "BuildDebug64",
 			"type": "shell",
-			"command": "cmake -S .\\ -B .\\build; cmake --build .\\build ",
+			"command": "cmake -D CMAKE_BUILD_TYPE=Debug -S .\\ -B .\\build; cmake --build .\\build --config Debug ",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "BuildandTestDebug64",
+			"type": "shell",
+			"command": "cmake -D CMAKE_BUILD_TYPE=Debug -S .\\ -B .\\build; cmake --build .\\build --config Debug; ctest --test-dir build --output-on-failure ",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "BuildRelease64",
+			"type": "shell",
+			"command": "cmake -D CMAKE_BUILD_TYPE=Release -S .\\ -B .\\build; cmake --build .\\build --config Release ",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Test",
+			"type": "shell",
+			"command": "ctest --test-dir build --output-on-failure",
 			"presentation": {
 				"reveal": "always",
 				"panel": "dedicated"

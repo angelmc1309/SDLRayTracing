@@ -1,6 +1,7 @@
 #pragma once
 #include "matematical.hpp"
 #include "constants.hpp"
+
 // This class contains basic funcitonalities to compute the rays needed in our rasterization
 class Camera
 {

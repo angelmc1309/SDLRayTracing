@@ -2,17 +2,19 @@
 
 
 # Minimum required version of CMake
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.16..3.24)
 
-# Set the project c++ standard
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+project(RayTracer
+    VERSION 0.1
+    DESCRIPTION "Ray Tracer using C++, CMake and the SDL library" 
+    LANGUAGES CXX
+)
 
-
-project(RayTracer)
+include(CTest)
 
 add_subdirectory(./src)
 
-add_subdirectory(./src/launcher)
+add_subdirectory(./external)
 
-#add_subdirectory(./tests)
+add_subdirectory(./tests)
+
